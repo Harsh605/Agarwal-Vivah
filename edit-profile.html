@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+      <link rel="stylesheet" type="text/css" href="css/custom.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Agarwal Matrimonials</title>
+  </head>
+  <body>
+<header id="header">
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="AgarwalsVivah" height="40" width=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="about-us.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="success-stories.html">Sucess Stories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="social-activies.html">Social Activies</a>
+        </li>
+       <li class="nav-item">
+          <a class="nav-link" href="contact-us.html" >Contact Us</a>
+        </li>
+      </ul>
+   <div class="d-flex ">
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <i class="fa-solid fa-phone-volume"></i> 
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <div class="fixed-helpline-icon">
+              <div class="hdtxt1"><i class="fa-solid fa-phone"></i> <span>Let's Connect With Metablock Technologies</span> </div>
+            </div>
+            <hr>
+              <div id="div_help">
+                <h4>For Sales Inquiry</h4>
+                <a href="contact-us.html"><i class="fa-solid fa-phone"></i> <span>+91 935 859 3003</span></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i> <span>Info@metablocktechnologies.io</span></a>
+              </div>
+              <hr>
+              <div id="div_help">
+                <h4>For Quick Connect</h4>
+              <a href="#"><i class="fa-brands fa-whatsapp"></i><span>Whatsapp</span></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i><span>Linkedin</span></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i><span>Fecebook</span></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+</header>
+<div class="fake-header">&nbsp;</div>
+<!-- <div class="page-title"><h1>Create your Profile</h1></div> -->
+<div class="sub-main-nav">
+  <div class="container">
+    <div class="row">
+    <div class="col-sm-10 col-xl-10 col-lg-10 myprofile">
+    <ul>
+      <li><a href="edit-profile.html">My Profile</a></li>
+      <li><a href="my-matches.html">Matches<sup>20</sup></a></li>
+      <li><a href="search.html">Search</a></li>
+      <li><a href="inbox.html">Inbox</a></li>
+    </ul>
+  </div>
+    <div class="col-sm-2 col-lg-2 col-xl-2 profile_rt">
+          <button class="btn dropdown-toggle" type="button" id="profile-drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <span class="profile-icon"><img src="img/founder.jpg" alt=""></span>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="profile-drop">
+               <div id="div_help">
+                <a href="edit-profile.html">My Profile</a>
+                <a href="profile-setting.html">Account Settings</a>
+                <a href="#">Change Password</a>
+                <a href="privacy-option.html">Privacy Options</a>
+                <a href="index.html">Logout</a>
+              </div>
+          </div>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="main-sub-nav">
+  <div class="container">
+    <ul class="ml-auto">
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="edit-profile.html" class="active">Edit Profile</a></li>
+      <li><a href="my-photo.html">My Photos</a></li>
+      <li><a href="partner-profile.html">Partner Preferences</a></li>
+      <li><a href="profile-setting.html">Settings</a></li>
+    </ul>
+  </div>
+</div>
+<section class="gray-back">
+
+  <div class="container">
+      <div class="profile-top box-sm" id="edit-box-sm">
+        <div class="row">
+          <div class="col-sm-3 col-xl-3 col-lg-3 col-md-12 profilepic-up">
+          <img src="img/founder.jpg">
+          <p class="mt20"><strong>99%</strong> Profile completed </p>
+            <input type="file" id="real-file" hidden="hidden" />
+            <button type="button" id="custom-button">Upload Photo</button>
+            <span id="custom-text">No file chosen, yet.</span><br>
+          </div>
+          <div class="col-sm-9 col-lg-9 col-xl-9 col-md-12">
+              <div class="profile-heada d-flex justify-content-between" id="lalitgprop"><h5>Lalit Gupta <img src="img/verified.svg"> </h5> <span>Profile ID: AV789</span></div>
+              <div class="row ageheight">
+                <div class="col-sm-6 col-lg-6 col-xl-6 Single">
+                  <ul class="profile-shortlistaa">
+                    <li><strong>Age / Height</strong>: 21 / 4' 5"</li>
+                    <li><strong>Marital Status</strong>: Never Married</li>
+                    <li><strong>Posted by</strong>: Parent / Guardian</li>
+                  </ul>
+                </div>
+                <div class="col-sm-6 col-lg-6 col-xl-6">
+                  <ul class="profile-shortlistaa">
+                    <li><strong>Religion / Community</strong>: Hindu, Other</li>
+                    <li><strong>Location</strong>: Other</li>
+                    <li><strong>Mother Tongue</strong>: Hindi</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="manage-pro">
+              <div class="row">
+                <div class="col-sm-12 col-lg-12 col-xl-12"><h5>Manage your Profile</h5></div>
+                <div class="col-sm-4 col-xl-4 col-lg-4 edit-filter">
+                  <ul>
+                    <li><a href="#">Edit Personal Profile</a></li>
+                    <li><a href="#">Edit Partner Profile</a></li>
+                    <li><a href="#">Edit Contact Details</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-4 col-xl-4 col-lg-4 edit-filter">
+                  <ul>
+                    <li><a href="#">View Profile Stats</a></li>
+                    <li><a href="#">Add Photos</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-4 col-xl-4 col-lg-4 edit-filter">
+                  <ul>
+                    <li><a href="#">Set Contact Filters</a></li>
+                    <li><a href="#">Hide / Delete Profile</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 your-preview">
+            <a href="#" class="btn btn-link">Preview your profile</a>
+            </div>
+            </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+
+<div class="col-sm-12 col-lg-12 col-xl-12">
+        <nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <button class="nav-link active" id="nav-aboutmyself-tab" data-toggle="tab" data-target="#nav-aboutmyself" type="button" role="tab" aria-controls="nav-aboutmyself" aria-selected="true">About MySelf</button>
+    <button class="nav-link" id="nav-partner-tab" data-toggle="tab" data-target="#nav-partner" type="button" role="tab" aria-controls="nav-partner" aria-selected="false">Partner Preferences</button>
+  </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-aboutmyself" role="tabpanel" aria-labelledby="nav-aboutmyself-tab">
+
+    <h3 class="education" id="educationds">Personality, Family Details, Career, Partner Expectations etc.<a href="#" class="btn btn-sm "><img src="img/editprofile.png"> Edit</a></h3>
+    <p>It is a pleasure sharing a few words about my son.
+He has completed his M.E / M.Tech. His optimistic personality is adored by one and all. He is looking for a girl with whom he can lead a happy and content life.</p>
+    <h3 class="education">Basics & Lifestyle <a href="#" class="btn btn-sm "><img src="img/editprofile.png"> Edit</a></h3>
+    <div class="row ageheight">
+      <div class="col-sm-6 col-lg-6 col-xl-6  Single">
+        <ul class="profile-shortlistss">
+          <li><strong>Age</strong>: 21</li>
+          <li><strong>Date of Birth</strong>: 01-Jan-2002</li>
+          <li><strong>Marital Status</strong>: Never Married</li>
+          <li><strong>Marital Status</strong>: Never Married</li>
+          <li><strong>Height</strong>: 4' 5"(134cm)</li>
+          <li><strong>Grew up in</strong>: India</li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-6 col-xl-6">
+        <ul class="profile-shortlistss">
+          <li><strong>Diet</strong>: Non-Veg</li>
+          <li><strong>Parsonal Values</strong>: Will tell you later</li>
+          <li><strong>Sun sign</strong>: Capricorn</li>
+          <li><strong>Blood Group</strong>: .....</li>
+          <li><strong>Health Infomation</strong>: Not Specified</li>
+          <li><strong>Disablitiy</strong>: None</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+    <h3 class="col-sm-6 education">Religious Background<a href="#" class="btn btn-sm "><img src="img/editprofile.png"> Edit</a></h3>
+    <h3 class="col-sm-6 education">Astro Details<a href="#" class="btn btn-sm "><img src="img/editprofile.png"> Edit</a></h3></div>
+    <div class="row ageheight">
+      <div class="col-sm-6 col-lg-6 col-xl-6 Single">
+        <ul class="profile-shortlistss">
+          <li><strong>Religion</strong>: Hindu</li>
+          <li><strong>Community</strong>: Other</li>
+          <li><strong>Sub community</strong>: Not Specified</li>
+          <li><strong>Gothra/Gothram</strong>: Not Specified</li>
+          <li><strong>Mother Tongue</strong>: Hindi</li>
+          <li><strong>Can speak</strong>: ....</li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-6 col-xl-6">
+        <ul class="profile-shortlistss">
+          <li><strong>Manglik/Chevvai dosham</strong>: Don't Know</li>
+          <li><strong>Date of Birth</strong>: 01-Jan-2002</li>
+          <li><strong>Time of Birth</strong>: .....</li>
+          <li><strong>City of Birth</strong>: .....</li>
+        </ul>
+      </div>
+    </div>
+    <h3 class="education">Family details <a href="#" class="btn btn-sm "><img src="img/editprofile.png"> Edit</a></h3>
+    <div class="row ageheight">
+      <div class="col-sm-6 col-lg-6 col-xl-6 Single">
+        <ul class="profile-shortlistss">
+          <li><strong>Father's Status</strong>: .....</li>
+          <li><strong>Mother's  Status</strong>: .....</li>
+          <li><strong>Family Location</strong>: Jaipur, Rajasthan, India</li>
+          <li><strong>Native Place</strong>: Not Specified</li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-6 col-xl-6">
+        <ul class="profile-shortlistss">
+          <li><strong>No. of Brothers</strong>: .....</li>
+          <li><strong>No. of Sisters</strong>: .....</li>
+          <li><strong>Family Type</strong>: Not Specified</li>
+          <li><strong>Family Values</strong>: Not Specified</li>
+          <li><strong>Family Affluence</strong>: .....</li>
+        </ul>
+      </div>
+    </div>
+    <h3 class="education">Education & Career<a href="#" class="btn btn-sm "><img src="img/editprofile.png"> Edit</a></h3>
+    <div class="row ageheight">
+      <div class="col-sm-6 col-lg-6 col-xl-6 Single">
+        <ul class="profile-shortlistss">
+          <li><strong>Highest Qualification</strong>: M.E / M.Tech - Engineering</li>
+          <li><strong>College(s) Attended</strong>: .....</li>
+          <li><strong>Annual Income</strong>: Upto INR 1 Lakh</li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-6 col-xl-6">
+        <ul class="profile-shortlistss">
+          <li><strong>Working With</strong>: Private Company</li>
+          <li><strong>Working As</strong>: Not Specified</li>
+          <li><strong>Employer Name</strong>: .....</li>
+        </ul>
+      </div>
+    </div>
+    <h3 class="education">Location of Groom<a href="#" class="btn btn-sm "><img src="img/editprofile.png"> Edit</a></h3>
+    <div class="row ageheight">
+      <div class="col-sm-6 col-lg-6 col-xl-6 Single">
+        <ul class="profile-shortlistss">
+          <li><strong>Current Residence</strong>: Other, India</li>
+          <li><strong>State Of Residence</strong>: Rajasthan</li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-6 col-xl-6">
+        <ul class="profile-shortlistss">
+          <li><strong>Residency Status</strong>: Citizen</li>
+          <li><strong>Zip / Pin code</strong>: Not Specified</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="nav-partner" role="tabpanel" aria-labelledby="nav-partner-tab">
+      <h3 class="education">Basic Info<a href="#" class="btn btn-sm "><img src="img/editprofile.png"> Edit</a></h3>
+    <div class="row ageheight">
+      <div class="col-sm-6 col-lg-6 col-xl-6 Single">
+        <ul class="profile-shortlistss">
+          <li><strong>Age</strong>: 18 to 21</li>
+          <li><strong>Height</strong>: 4' 5"(134cm) to 4' 11"(149cm)</li>
+          <li><strong>Religion / Community</strong>: Hindu</li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-6 col-xl-6">
+        <ul class="profile-shortlistss">
+          <li><strong>Mother tongue</strong>: Hindi, English</li>
+          <li><strong>Marital Status:</strong>: Never Married</li>
+        </ul>
+      </div>
+    </div>
+    <h3 class="education">Location Details<a href="#" class="btn btn-sm "><img src="img/editprofile.png"> Edit</a></h3>
+    <div class="row ageheight">
+      <div class="col-sm-6 col-lg-6 col-xl-6 Single">
+        <ul class="profile-shortlistss">
+          <li><strong>Country living in</strong>: India</li>
+          <li><strong>State living in</strong>: Doesn't Matter</li>
+          <li><strong>City / District</strong>: Doesn't Matter</li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-6 col-xl-6">
+      </div>
+    </div>
+    <h3 class="education">Education & Career<a href="#" class="btn btn-sm "><img src="img/editprofile.png"> Edit</a></h3>
+    <div class="row ageheight">
+      <div class="col-sm-6 col-lg-6 col-xl-6 Single">
+        <ul class="profile-shortlistss">
+          <li><strong>Education</strong>: Doesn't Matter</li>
+          <li><strong>Working with</strong>: Doesn't Matter</li>
+          <li><strong>Profession area</strong>: Doesn't Matter</li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-6 col-xl-6">
+        <ul class="profile-shortlistss">
+          <li><strong>Working as</strong>: Doesn't Matter</li>
+          <li><strong>Annual income</strong>: Doesn't Matter</li>
+        </ul>
+      </div>
+    </div>
+    <h3 class="education">Other Details<a href="#" class="btn btn-sm "><img src="img/editprofile.png"> Edit</a></h3>
+    <div class="row ageheight">
+      <div class="col-sm-6 col-lg-6 col-xl-6 Single">
+        <ul class="profile-shortlistss"> 
+          <li><strong>Profile created by</strong>: Doesn't Matter</li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-6 col-xl-6">
+        <ul class="profile-shortlistss">
+          <li><strong>Diet</strong>: Doesn't Matter</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="My-Contact-detail">
+    <h3>My Contact detail</h3>
+  </div>
+  <h3 class="education" id="editedd"><a href="#" class="btn btn-sm "><img src="img/editprofile.png"> Edit</a></h3>
+    <div class="row ageheight">
+      <div class="col-sm-6 col-lg-6 col-xl-6 Singlesa">
+        <ul class="profile-shortlistss"> 
+          <li><strong>Mobile</strong>: +91-7357592858</li>
+          <li><strong>Contact Person</strong>: -</li>
+          <li><strong>Relationship with the member</strong>: -</li>
+          <li><strong>Convenient Time to Call</strong>: -</li>
+          <li><strong>Display Option</strong>: You have chosen to display your contact details to all premium members.</li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-6 col-xl-6">
+      </div>
+    </div>
+    <div class="prentpagessa d-flex justify-content-between">
+      <a href="#">Preview your profile</a>
+      <a href="#" onclick="window.print()"><i class="fa-solid fa-print"></i> Print</a>
+    </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section id="bottom-footer">
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-sm-3">
+        <h2>Contact Us</h2>
+        <ul>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a data-toggle="modal" href="#login">Login</a></li>
+          <li><a data-toggle="modal" href="#register">Register</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+       <h2>Quick Links</h2>
+        <ul>
+          <li><a href="#">Our Social Activities</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+       <h2>Follow Us</h2>
+        <ul>
+          <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+          <li><a href="#"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h3>&nbsp;</h3>
+        <p>Connect with us using WhatsApp</p>
+        <a href="#"><img src="img/whatsapp-icon.png" alt=""></a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-lg-6 col-xl-6">&copy; AgarwalsVivah, Community Matchmaking Trusted By Parents <sup>TM</sup></div>
+      <div class="col-sm-6 col-lg-6 col-xl-6"><div class="text-right">Passionately created by MetaBlock</div></div>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript">
+  const realFileBtn = document.getElementById("real-file");
+const customBtn = document.getElementById("custom-button");
+const customTxt = document.getElementById("custom-text");
+
+customBtn.addEventListener("click", function () {
+  realFileBtn.click();
+});
+
+realFileBtn.addEventListener("change", function () {
+  if (realFileBtn.value) {
+    customTxt.innerHTML = realFileBtn.value.match(
+      /[\/\\]([\w\d\s\.\-\(\)]+)$/
+    )[1];
+  } else {
+    customTxt.innerHTML = "No file chosen, yet.";
+  }
+});
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+ </body>
+</html>
